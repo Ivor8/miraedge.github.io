@@ -1,0 +1,88 @@
+#team-header{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(/images/IMG-20240929-WA0001.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+    height: 50vh;
+}
+#team-header h1{
+    color: var(--secondary-color);
+    font-size: 3.5rem;
+}
+
+#team{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#team p{
+    text-align: center; 
+    padding: 1rem 4rem;
+}
+.team-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+    margin-bottom: 2rem;
+}
+.team-member {
+    max-width: 13rem;
+}
+.team-member img{
+    width: 100%;
+    height: 55%;
+    border-radius: 1rem;
+
+}
+.team-member .memter-name span{
+    font-family: cursive;
+}
+
+.team-member .socials{
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem;
+}
+.team-member .socials i{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    padding: 0.8rem;
+    margin: 0.4rem;
+    border-radius: 50px;
+    transition: 0.2s;
+}
+.team-member .socials i:hover{
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+@media screen and (max-width: 780px){
+    .team-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 600px){
+    #team p{
+        text-align: center; 
+        padding: 1rem;
+    }
+    .team-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0.9rem;
+    }
+    #team-header h1{
+        color: var(--secondary-color);
+        font-size: 3rem;
+    }
+}

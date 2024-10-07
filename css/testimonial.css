@@ -1,0 +1,63 @@
+
+#testimonial-header{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(/images/IMG-20240929-WA0001.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+    height: 50vh;
+}
+#testimonial-header h1{
+    color: var(--secondary-color);
+    font-size: 3.5rem;
+}
+#testimonials {
+    width: 100%;
+    overflow: hidden;
+}
+
+.swiper-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.swiper-items {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.testimonial {
+    max-width: 35%;
+    flex: 0 0 auto;
+    margin: 0 10px;
+}
+
+.testimonial-content {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.testimonial img{
+    border-radius: 1rem;
+    height: 250px;
+    margin-bottom: 15px;
+}
+@media screen and (max-width: 770px){
+    .testimonial {
+    max-width: 90%;
+    flex: 0 0 auto;
+    margin: 0 10px;
+}
+}
+@media screen and (max-width: 600px){
+    #testimonial-header h1{
+        color: var(--secondary-color);
+        font-size: 3rem;
+    }
+}

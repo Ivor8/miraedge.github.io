@@ -5,7 +5,7 @@ nav{
     padding: 1rem 3rem;
     background: var(--background-color);
     position: fixed;
-    width: 100%;
+    width: 100vw;
     z-index: 2;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -281,9 +281,7 @@ nav{
 /* ######### Media Queries ######### */
 /* extra large screens */
 @media screen and (min-width: 1500px){
-    #services{
 
-    }
 }
 
 @media screen and (max-width: 1080px){
@@ -370,7 +368,5 @@ nav{
 }
 
 @media screen and (max-width: 600px){
-    #services{
 
-    }
 }

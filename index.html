@@ -4,12 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/contact.css">
      <!-- swipper js for div sliders -->
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+     <style>
+        #testimonials {
+    width: 100%;
+    overflow: hidden;
+}
+
+.swiper-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.swiper-items {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.testimonial {
+    max-width: 35%;
+    flex: 0 0 auto;
+    margin: 0 10px;
+}
+
+.testimonial-content {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.testimonial img{
+    border-radius: 1rem;
+    height: 250px;
+    margin-bottom: 15px;
+}
+@media screen and (max-width: 770px){
+    .testimonial {
+    max-width: 90%;
+    flex: 0 0 auto;
+    margin: 0 10px;
+}
+}
+     </style>
 </head>
 <body>
     <header>
@@ -134,84 +178,85 @@
 
         <!-- ********** Testimonial Section ********** -->
 
-        <section id="testimonials" class="mySwiper">
+        <section id="testimonials">
             <h1 class="section-title">Testimonials</h1>
-            <p class="testimonial-top">What our clients say about  us <i class="fa fa-arrow-down"></i></p>
+            <p class="testimonial-top">What our clients say about us <i class="fa fa-arrow-down"></i></p>
+            <div class="swiper-container">
+                <div class="swiper-items">
+                    <article class="testimonial">
+                        <div class="testimonial-content card">
+                            <img src="images/Black-CEOS.jpg" alt="image">
+                            <p>
+                                <i class="fa fa-quote-left"></i>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Cupiditate dolorum ex ad, magni unde hic.
+                                Lorem ipsum dolor sit amet consectetur.
+                                <i class="fa fa-quote-right"></i>
+                            </p>
+                            <br>
+                            <div class="client-name"><h2>Tendai Maduwa</h2> <span>Upwork</span></div>
+                        </div>
+                    </article>
+                    <article class="testimonial">
+                        <div class="testimonial-content card">
+                            <img src="images/Kenneth-Frazier.jpg" alt="image">
+                            <p>
+                                <i class="fa fa-quote-left"></i>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Cupiditate dolorum ex ad, magni unde hic.
+                                Lorem ipsum dolor sit amet consectetur.
+                                <i class="fa fa-quote-right"></i>
+                            </p>
+                            <br>
+                            <div class="client-name"><h2>Tendai Maduwa</h2> <span>Upwork</span></div>
+                        </div>
+                    </article>
+                    <article class="testimonial">
+                        <div class="testimonial-content card">
+                            <img src="images/senior-african-business-woman-portrait-600nw-2172816397.webp" alt="image">
+                            <p>
+                                <i class="fa fa-quote-left"></i>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Cupiditate dolorum ex ad, magni unde hic.
+                                Lorem ipsum dolor sit amet consectetur.
+                                <i class="fa fa-quote-right"></i>
+                            </p>
+                            <br>
+                            <div class="client-name"><h2>Tendai Maduwa</h2> <span>Upwork</span></div>
+                        </div>
+                    </article>
+                    <article class="testimonial">
+                        <div class="testimonial-content card">
+                            <img src="images/of-smart-african-woman-with-black-business-suit-at-big-modern-city-generative-ai-photo.jpg" alt="image">
+                            <p>
+                                <i class="fa fa-quote-left"></i>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Cupiditate dolorum ex ad, magni unde hic.
+                                Lorem ipsum dolor sit amet consectetur.
+                                <i class="fa fa-quote-right"></i>
+                            </p>
+                            <br>
+                            <div class="client-name"><h2>Tendai Maduwa</h2> <span>Upwork</span></div>
+                        </div>
+                    </article>
+                    <article class="testimonial">
+                        <div class="testimonial-content card">
+                            <img src="images/Black-CEOS.jpg" alt="image">
+                            <p>
+                                <i class="fa fa-quote-left"></i>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Cupiditate dolorum ex ad, magni unde hic.
+                                Lorem ipsum dolor sit amet consectetur.
+                                <i class="fa fa-quote-right"></i>
+                            </p>
+                            <br>
+                            <div class="client-name"><h2>Tendai Maduwa</h2> <span>Upwork</span></div>
+                        </div>
+                    </article>
 
-            <div class="swiper-items swiper-wrapper">
-                <article class="testimonial swiper-slide">
-                    <div class="testimonial-content card">
-                        <img src="images/man with VR.png" alt="image">
-                        <p>
-                            <i class="fa fa-quote-left"></i>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                            Cupiditate dolorum ex ad, magni unde hic. 
-                            Lorem ipsum dolor sit amet consectetur.
-                            <i class="fa fa-quote-right"></i>
-                        </p>
-                        <br>
-                        <div class="client-name"><h2>Tendai Maduwa</h2> <span>Upwork</span></div>
-                    </div>
-                </article>
-
-                <article class="testimonial swiper-slide">
-                    <div class="testimonial-content card">
-                        <img src="images/IMG-20240929-WA0000.jpg" alt="image">
-                        <p>
-                            <i class="fa fa-quote-left"></i>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                            Cupiditate dolorum ex ad, magni unde hic. 
-                            Lorem ipsum dolor sit amet consectetur.
-                            <i class="fa fa-quote-right"></i>
-                        </p>
-                        <div class="client-name"><h2>Tendai Maduwa</h2> <span>Upwork</span></div>
-                    </div>
-                </article>
-
-                <article class="testimonial swiper-slide">
-                    <div class="testimonial-content card">
-                        <img src="images/tech1.png" alt="image">
-                        <p>
-                            <i class="fa fa-quote-left"></i>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                            Cupiditate dolorum ex ad, magni unde hic. 
-                            Lorem ipsum dolor sit amet consectetur.
-                            <i class="fa fa-quote-right"></i>
-                        </p>
-                        <div class="client-name"><h2>Tendai Maduwa</h2> <span>Upwork</span></div>
-                    </div>
-                </article>
-
-                <article class="testimonial swiper-slide">
-                    <div class="testimonial-content card">
-                        <img src="images/man with VR.png" alt="image">
-                        <p>
-                            <i class="fa fa-quote-left"></i>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                            Cupiditate dolorum ex ad, magni unde hic. 
-                            Lorem ipsum dolor sit amet consectetur.
-                            <i class="fa fa-quote-right"></i>
-                        </p>
-                        <div class="client-name"><h2>Tendai Maduwa</h2> <span>Upwork</span></div>
-                    </div>
-                </article>
-
-                <article class="testimonial swiper-slide">
-                    <div class="testimonial-content card">
-                        <img src="images/man with VR.png" alt="image">
-                        <p>
-                            <i class="fa fa-quote-left"></i>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                            Cupiditate dolorum ex ad, magni unde hic. 
-                            Lorem ipsum dolor sit amet consectetur.
-                            <i class="fa fa-quote-right"></i>
-                        </p>
-                        <div class="client-name"><h2>Tendai Maduwa</h2> <span>Upwork</span></div>
-                    </div>
-                </article>
+                </div>
             </div>
         </section>
-         
     <!-- Contact Section -->
     <div class="container">
         <h1>Contact Us</h1>
@@ -281,27 +326,39 @@
      </section>
 
     <!-- Javascript -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
     <script src="JS/index.js"></script>
-    <!-- Initialize Swiper -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 1,
-            spaceBetween: 30,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            breakpoints: {
-                600: {
-                    slidesPerView: 2,
-                },
-                900: {
-                    slidesPerView: 3,
-                },
-            }
-        });
-    </script>
+document.addEventListener('DOMContentLoaded', function () {
+    const swiperItems = document.querySelector('.swiper-items');
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    swiperItems.addEventListener('mousedown', (e) => {
+        isDown = true;
+        swiperItems.classList.add('active');
+        startX = e.pageX - swiperItems.offsetLeft;
+        scrollLeft = swiperItems.scrollLeft;
+    });
+
+    swiperItems.addEventListener('mouseleave', () => {
+        isDown = false;
+        swiperItems.classList.remove('active');
+    });
+
+    swiperItems.addEventListener('mouseup', () => {
+        isDown = false;
+        swiperItems.classList.remove('active');
+    });
+
+    swiperItems.addEventListener('mousemove', (e) => {
+        if (!isDown) return;
+        e.preventDefault();
+        const x = e.pageX - swiperItems.offsetLeft;
+        const walk = (x - startX) * 2; // scroll-fast
+        swiperItems.scrollLeft = scrollLeft - walk;
+    });
+});
+</script>
 </body>
 </html>
