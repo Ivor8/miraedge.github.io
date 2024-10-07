@@ -1,0 +1,376 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    background: var(--background-color);
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.nav-links{
+    display: flex;
+}
+.nav-links li{
+    list-style: none;
+    padding: 0 0.9rem;
+
+} 
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.logo img{
+    width: 3.4rem;
+}
+.logo span{
+    font-size: 1.3rem;
+}
+
+#menu-open{
+    display: none;
+}
+#menu-close{
+    display: none;
+}
+
+/* ########## Hero Section ########*/
+.hero-section{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(/images/IMG-20240929-WA0000.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 91vh;
+
+}
+
+.hero-section-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8rem 0.3rem;
+    color: var(--secondary-color);
+    opacity: 0;
+    animation: slideDown 3s ease forwards;
+}
+
+/* slide animation */
+@keyframes slideDown{
+    to{
+        opacity: 1;
+        transform: translateY(3rem);
+    }
+}
+.hero-section-content .top-hero h1{
+    color: var(--background-color);
+    text-align: center;
+    font-size: 3.3rem;
+}
+.hero-section-content p{
+    max-width: 900px;
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 1.1rem;
+    letter-spacing: 0.1rem;
+}
+.hero-section-content a button{
+    background: transparent;
+    border: 3px solid var(--background-color);
+    transition: 0.6s ease;
+}
+.hero-section-content a button:hover{
+    transform: translateY(0.3rem);
+    background: var(--background-color);
+    color: var(--primary-color);
+}
+
+/* ########## About Section ##########  */
+#about{
+    margin-top: 3.5rem;
+}
+
+#about .about-title{
+    text-align: center;
+}
+.section-title{
+    text-align: center;
+}
+#about .container{
+    max-width: 1000px;
+}
+.about-container{
+    display: flex;
+    justify-content: center;
+
+}
+.about-container .about-intro{
+    flex-basis: 50%;
+}
+.about-container .about-img{
+    flex-basis: 50%;
+    opacity: 0;
+}
+/* class to be added when the image reaches the middle of the monitor */
+.animate{
+    animation: slideLeft 3s ease forwards;
+    opacity: 0;
+}
+@keyframes slideLeft{
+    to{
+        transform: translateX(0.7rem);
+        opacity: 1;
+    }
+}
+
+/* ########## Services ########## */
+#services{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(/images/IMG-20240929-WA0001.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--secondary-color);
+}
+
+#services .section-title{
+    color: var(--secondary-color);
+    padding-top: 2rem;
+    margin-bottom: 1.2rem;
+}
+#services .services-description{
+    text-align: center;
+}
+
+.services-container{
+    padding: 2rem 3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.1rem;
+}
+.services-container .service-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border: 2px solid var(--secondary-color);
+    border-radius: 10px;
+}
+.services-container .service-card i{
+    font-size: 2rem;
+    border: 1px solid var(--secondary-color);
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+.services-container .service-card h2{
+    color: var(--secondary-color);
+    padding: 0.5rem 0;
+}
+.services-container .service-card button{
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    margin-top: 1rem;
+    font-weight: bolder;
+    transition: 0.5s;
+}
+
+.services-container .service-card button:hover{
+    background: transparent;
+    color: var(--secondary-color);
+    border: 2px solid var(--secondary-color);
+    border-radius: 5px;
+}
+
+/* ########## Footer ##########  */
+#testimonials{
+    margin-top: 1rem;
+}
+.swiper-items{
+    margin-top: 3rem;
+}
+#testimonials .testimonial-top{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.testimonial-content{
+    margin: 1rem;
+}
+.testimonial-content img{
+    height: 12rem;
+}
+
+/* ########## Footer ##########  */
+#footer{
+    background: var(--primary-color);
+    color: var(--secondary-color);
+}
+#footer h1{
+    color: var(--secondary-color);
+    margin-bottom: 1.5rem;
+}
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 2rem 3rem;
+}
+.footer-container .footer-sec2 ul li{
+    list-style: none;
+}
+.footer-container .footer-sec2 ul li a{
+    color: var(--secondary-color);
+
+}
+.footer-container .footer-sec3 input{
+    margin-top: 0.6rem;
+    padding: 9px 10px;
+    outline: none;
+    font-size: 16px;
+}
+.footer-container .footer-sec3 button{
+    color: var(--primary-color);
+    background: var(--secondary-color);
+    margin-top: 0.6rem;
+}
+.footer-container div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.footer-container .footer-sec4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.under-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid var(--secondary-color);
+    margin: 0 3rem;
+    padding: 2rem 0;
+}
+
+.under-footer .socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.under-footer .socials a i{
+    color: var(--secondary-color);
+    margin: 1.2rem 0.5rem;
+    padding: 0.7rem;
+    font-size: 1.4rem;
+    border: 1px solid var(--secondary-color);
+    border-radius: 50%;
+}
+.under-footer .socials a i:hover{
+    background: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+
+
+
+
+/* ######### Media Queries ######### */
+/* extra large screens */
+@media screen and (min-width: 1500px){
+    #services{
+
+    }
+}
+
+@media screen and (max-width: 1080px){
+        /* ===== NavBar ===== */
+        #menu-open{
+            font-size: 1.6rem;
+            display: inline-block;
+        }
+        #menu-close{
+            font-size: 1.6rem;
+            display: none;
+        }
+        .nav-links{
+            position: absolute;
+            display: none;
+            flex-direction: column;
+            top: 4.2rem;
+            right: 0;
+            background: var(--background-color);
+            transition: 1s;
+        }
+        .nav-links li{
+            padding: 1.6rem 5rem;
+            width: 100vw;
+        }
+        .nav-links li:hover{
+            box-shadow: 0 1px 4px hsl(0 4% 14% / 10%);
+    
+        }
+        nav{
+            position: fixed;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 1.5rem;
+            background: var(--background-color);
+            box-shadow: 0 1px 4px hsl(0 4% 14% / 10%);
+        }
+    /* about */
+    .about-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-container .about-intro{
+        flex-basis: 50%;
+        text-align: center;
+    }
+    .services-container{
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+    }
+    /* footer */
+    .footer-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem 2rem;
+    }
+
+@media screen and (max-width: 780px){
+    .services-container{
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+    /* hero section */
+    .hero-section-content{
+        padding: 6rem 0.3rem;
+    }
+    /* footer */
+    .services-container{
+        padding: 1rem 1.5rem;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+    .footer-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 2rem 2rem;
+    }
+
+}
+}
+
+@media screen and (max-width: 600px){
+    #services{
+
+    }
+}

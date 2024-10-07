@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap");
+:root {
+    --primary-color: #000; /* Black */
+    --secondary-color: #FFF; /* White */
+    --background-color: #F7F7F7; /* Light Gray */
+    --text-color: #333; /* Dark Gray */
+    --accent-color: #444; /* Darker Gray */
+    --hover-color: #555; /* Even Darker Gray */
+    --border-color: #CCC; /* Light Gray */
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+  }
+  img{
+    width: 100%;
+  }
+  h1{
+    font-size: 1.9rem;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-color);
+  }
+  
+  a {
+    color: var(--accent-color);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: var(--hover-color);
+  }
+  p{
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+  }
+  
+  button, .btn {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover, .btn:hover {
+    background-color: var(--hover-color);
+  }
+  
+  hr {
+    border-color: var(--border-color);
+    width: 8%;
+  }
+  
+  .card {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border: 1px solid var(--border-color);
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+  }
